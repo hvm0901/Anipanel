@@ -13,7 +13,7 @@ def create_video(image_files, framerate, output_format):
     output_ext = "gif" if output_format == "GIF" else "mp4"
     output_path = temp_dir / f"animation.{output_ext}"
     
-    image_files.sort(key=lambda x: [int(c) if c.isdigit() else c for c in Path(x.name).stem.split()])
+    # image_files.sort(key=lambda x: [int(c) if c.isdigit() else c for c in Path(x.name).stem.split()])
     frames = []
     target_size = None
     
